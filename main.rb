@@ -1,10 +1,10 @@
-require_relative 'lib/weapon_behaviour'
-require_relative 'lib/king'
+require_relative 'lib/customer'
+require_relative 'lib/payment_method_strategy'
 
-henry = King.new(SwordBehaviour.new)
+customer = Customer.new('Matthew Millard', CreditCard.new)
 
-henry.fight
+customer.make_payment(50)
 
-henry.weapon_behaviour = AxeBehaviour.new
+customer.payment_method = PayPal.new
 
-henry.fight
+customer.make_payment(30)
