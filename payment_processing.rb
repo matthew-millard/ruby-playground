@@ -1,5 +1,5 @@
-require_relative 'lib/customer'
-require_relative 'lib/payment_method_strategy'
+require_relative 'lib/payment_processing_challenge/customer'
+require_relative 'lib/payment_processing_challenge/payment_method_strategy'
 
 customer = Customer.new('Matthew Millard', CreditCard.new)
 
